@@ -85,6 +85,7 @@ nav ul li a:hover {
 
 .movie-section {
     padding: 50px;
+    font-family: "Exo 2", sans-serif;
 }
 
 .movie-section h2 {
@@ -207,6 +208,10 @@ section > h2{
     width: 100%;
     background-color: #000;
     padding: 20px;
+
+    height: 600px;
+    font-family: "Exo 2", sans-serif;
+  
 }
 
 /* Styles for the heading */
@@ -218,8 +223,12 @@ section > h2{
 /* Styles for the pricing cards container */
 .pricing-cards {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-self: center;
     gap: 20px;
+    height: 500px;
+    
+
 }
 
 /* Styles for individual pricing cards */
@@ -231,6 +240,11 @@ section > h2{
     width: 45%;
     box-sizing: border-box;
     transition: transform 0.3s ease;
+    width: 400px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
 }
 
@@ -238,6 +252,7 @@ section > h2{
 /* Hover effect for pricing cards */
 .pricing-card:hover {
     transform: translateY(-10px);
+    background-color: #333;
 }
 
 /* Styles for the plan name */
@@ -287,13 +302,14 @@ section > h2{
 
 
 /* --------------------------- */
-
+/* footer design */
 
 .footer {
     background-color: #333;
     color: #fff;
     padding: 40px 0;
     text-align: center;
+    font-family: "Exo 2", sans-serif;
 }
 
 .footer-content {
@@ -333,6 +349,7 @@ section > h2{
     color: #fff;
     text-decoration: none;
     transition: color 0.3s;
+    /* transition: translateX(50px); */
 }
 
 .footer-section ul li a:hover {
@@ -357,15 +374,21 @@ section > h2{
 
 /* ------------ */
 
-
+/* navbar design */
 
 header {
+   
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed; /* Fixes the header at the top */
+    top: 0; /* Positions the header at the top */
+    width: 100%; /* Ensures the header spans the full width of the page */
+    z-index: 1000;
+   
 }
 
 .logo {
@@ -405,3 +428,66 @@ nav ul li a {
 }
 
 
+/* carousel */
+.hero{
+    font-family: "Exo 2", sans-serif;
+}
+.carousel-item {
+    height: 100vh;
+    min-height: 200px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    /* border-radius: 10px; */
+    /* height: 500px;
+    width: full;; */
+    margin: 0px;
+    /* height: 100vh ; */
+   
+}
+.carousel-caption p {
+   margin-top: 10px;
+   
+}
+
+.movie-item_ h1 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.movie-infos_2 {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    
+}
+
+.movie-info_2 {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+button {
+    /* background-color: #e74c3c; */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    /* background-color: #c0392b; */
+}
+
+p {
+    color: #fff;
+}
